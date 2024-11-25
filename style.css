@@ -1,0 +1,80 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#menu {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#menu button {
+    margin-right: 10px;
+}
+
+#toolbar {
+    background-color: #f8f8f8;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+#toolbar button, #toolbar input {
+    padding: 5px;
+}
+
+/* Canvas Styles */
+#canvasContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#paintCanvas {
+    border: 1px solid #ccc;
+    background-color: white;
+    cursor: crosshair;
+}
+
+/* Welcome Screen */
+#welcomeScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column;
+}
+
+#start {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Shape Popup */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: none;
+}
+
+.popup button {
+    margin: 10px;
+}
